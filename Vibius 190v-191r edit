@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title of Work</title>
+        <author>Name of Author</author>
+        <editor>Name of Editor</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>First Edition</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Society for Classical Studies</publisher>
+        <distributor>Digital Latin Library</distributor>
+        <date>2016</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+            Creative Commons Attribution 4.0 International License.</licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s">Library of Digital Latin Texts</title>
+        <biblScope unit="vol">1</biblScope>
+      </seriesStmt>
+      <sourceDesc>
+        <p>Born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front xml:id="front">
+      <div type="section" xml:id="preface">
+        <head>Preface</head>
+        <p>General introductory remarks about the edition.</p>
+        <div type="section" xml:id="preface-section-1">
+          <p><ref target="url">My pretty picture</ref></p>
+          <!--This is a section within the preface. Editors should use
+          sections (distinguished by <div>) to organize the content of the edition's preface.-->
+        </div>
+      </div>
+      <div type="section" xml:id="bibliography">
+        <head>Bibliography</head>
+        <div type="section" xml:id="bibliography-witnesses">
+<listWit>
+<witness xml:id="V">
+<abbr type="siglum">V</abbr>
+Codex Vaticanus Latinus 4929 ff. 188r–195r (<ptr target="https://digi.vatlib.it/view/MSS_Vat.lat.4929"/>, accessed on 2019-03-17).</witness>
+<witness xml:id="V1">
+<abbr type="siglum">V<hi rend="superscript">1</hi>
+</abbr>
+Corrections made by the original manuscript copyist.</witness>
+<witness xml:id="V2">
+<abbr type="siglum">V<hi rend="superscript">2</hi>
+</abbr>
+Corrections made by a hand contemporary to the original manuscript copyist.</witness>
+<witness xml:id="V3">
+<abbr type="siglum">V<hi rend="superscript">3</hi>
+</abbr>
+Corrections made by a hand at the end of the 11<hi rend="superscript">th</hi>
+century or the beginning of the 12<hi rend="superscript">th</hi>
+century.</witness>
+<witness xml:id="V4">
+<abbr type="siglum">V<hi rend="superscript">4</hi>
+</abbr>
+Corrections made by a hand a little after V<hi rend="superscript">3</hi>.</witness>
+<witness xml:id="VC">
+<abbr type="siglum">V<hi rend="superscript">c</hi>
+</abbr>
+Corrections made by a hand that cannot be identified with certainty (i.e., it could be any of those already listed).</witness>
+<witness xml:id="VP">
+<abbr type="siglum">V<hi rend="superscript">p</hi>
+</abbr>
+A reading prior to correction.</witness>
+</listWit>
+</div>
+        <!--This is where the bibliography for the edition is listed, including manuscript
+        descriptions, and lists of early editions, modern editions, and other sources cited
+        in the current edition. For more information on encoding the items in the bibliography
+        see section 3 Bibliography below. -->
+        <div type="section" xml:id="conspectus">
+          <head>Conspectus</head>
+          <listWit>
+            <witness xml:id="Servius"><abbr type="siglum">Servius</abbr></witness>
+            <witness xml:id="Pastrengicus"><abbr type="siglum">Pastrengicus</abbr></witness>
+          </listWit>
+          <!--A key to the special sigla and abbreviations used in the edition (drawn
+          from the @xml:id's assigned to the various items in the
+          bibliography). The list of sigla may be generated automatically. -->
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="edition" xml:id="edition-text">
+        <div type="textpart" n="1" xml:id="part1">
+          <head>Title of First Part</head>
+<p xml:id="hypsa">
+  <placeName>ref="https://pleiades.stoa.org/places/462255">Hypsas</placeName>Hypsa; secundum irecon urbem
+  <lb/>hispaniae decurrit,gratam herculi.</p>
+<p xml:id="hipparis">
+  <placeName>ref="https://pleiades.stoa.org/places/462248">Hipparis</placeName>Hipparis quem et hictarin vocant.
+  <lb/>exquo camerinis aqua inducta est.</p>
+<p xml:id="haemus">Haemus, Lyciae.<!-- ask Huskey:Gelsomino says Hermus, clearly not an r --></p>
+<p xml:id="haesusa">Haesusa unde aefinibus Apolloniae
+  <lb/>decurrens infinum Ionium. </p>
+<p xml:id="indus">Indus;inebam<note>indiam</note>definit aboccasua
+  <lb/>quo,India dicta hic descendentem
+  <lb/>hydaspem recipit.</p>
+<p xml:id="isara">Isara, Galliae, currit in Rhodanum.</p>
+<p xml:id="isamnus">Isamnus,Dyrrachi.ab idano castello
+  <lb/>dictur.</p>
+<p xml:id="ileida">Ileida,Hispaniae;a quo Ilerda.</p>
+<p xml:id="inachus">Inachus;Thessaliae.</p>
+<p xml:id="kaicus">Kaicus;Moesiae.</p>
+<p xml:id="lycesius">Lycesius,Thraciae.cuius aqua biben
+  <lb/>tes<note>author added and crossed out extra 'n'</note>, ebrii fiunt.</p>
+<p xml:id="lethe">Lethe,inferoru;<!-- ... -->>causa.</p>
+<p xml:id="liris">Liris;non longe amarsis,vestinisque
+  <lb/>cuius inripa.nymphae marinae
+  <lb/>minturnensis templu;e;<!-- ask Huskey -->></p>
+<p xml:id="lycus">Lycus;Asiae.unde lycis.</p>
+<p xml:id="liger">Liger,Gallie;duvictus <!-- ask Huskey -->>
+  <lb/>in occeanum britannicum <!-- ask Huskey -->></p>
+<p xml:id="lycastus">Lycastus;coae.a quo lyca
+  <lb/>civitas.</p>
+<p xml:id="lethecus">Lethecus,insulae Cretae;ita dictus,
+  <lb/>quod <note>h added</note>armonia veneris filia,cad
+  <lb/>mon oblita dicitur.</p>
+<p xml:id="mincius">Mincius,Galliae cisalpinae;proximus
+  <lb/>Mantuanis.agitur ex benaco.<note>Mosella belgice,defluit in renum</note></p>
+<p xml:id="maeandros">Maeandros,cariae,<!--?-->>Asiae.
+  <lb/>hic tam flexuosus est,ut in sese
+  <lb/>recurrat</p>
+<p xml:id="minion">Minion,et ruriae;aminione.</p>
+<p xml:id="metaurus">Metaurus,Umbriae;infinum adri
+  <lb/>aticum decurrens.</p>
+<p xml:id="megera">Megera,liguriae;secundum lunam
+  <lb/>urbem.<note>luna urbs</note></p>
+<p xml:id="mathis">Mathis;Dyrrachi non longe alisso.</p>
+<p xml:id="marsyas">Marsyas,frygiae;urbis cellenae.</p>
+<p xml:id="mecas">Mecas<!--hole in manuscript obscuring M-->,Thessaliae;in epidamnum
+  <lb/>fluens.</p>
+<p xml:id="nilus">Nilus,Aegypti.ex Aethiopia de
+  <lb/>currens.berim decurrit.</p>
+<p xml:id="nar">Nar,sabinorum;ex appeninino in ti<note>tiberim according to Gelsomino</note>
+  <lb/>per Narniam fluit.</p>
+<p xml:id="numicus">Numicus;in agro laurenti.</p>
+<p xml:id="nifates">Nifates,Armeniae;ex monte Ni
+  <lb/>fante.<note>Nifate</note></p>
+<p xml:id="oaxes">Oaxes,Cretae.a quo et civitas
+  <lb/>Oaxia,varro hoc docet.geminis
+  <lb/>cupiens <note>capiens</note> tellurem oaxia palmis.</p>
+<p xml:id="orethus">Orethus,panhormi Siciliae.</p>
+<p xml:id="orontes">Orontes,Syriae;e monte casio.</p>
+<p xml:id="padus">Padus,Galliae cisalpinae.qui
+  <lb/>et eridanus.</p>
+<p xml:id="permessos">Permessos,Boeotiae.</p>
+<p xml:id="peneos">Peneos Thessaliae;ubi filuae
+  <lb/>quas tempe vocant.hunc be
+  <lb/>bryces possederunt.</p>
+<p xml:id="phasis">Phasis,in colchide;qui de monte
+  <lb/>garamante<!--?--> fluit.</p>
+<p xml:id="pantagras">Pantagras,Siciliae;ita dictus,
+  <lb/>quod sonitus eius decurrentis
+  <lb/>per totam insulam auditus est usque
+  <lb/>eo donec ceres filiam quaerens
+  <lb/>conprimeret <note>comprimeret</note> eum.</p>
+<p xml:id="pitornius">Pitornius qui per medium lacum
+  <lb/>fucinum marforum ita decurrit,
+  <lb/>ut aqua eius non misceatur
+  <lb/>stagno.</p>
+<p xml:id="pactolus">Pactolus,Lydiae qui decurrens
+  <lb/>aurum trahit.</p>
+<p xml:id="phaetelinus">Phaetelinus,Siciliae, iuxta pelo
+  <lb/>ridem;confinis templo Dianae.</p>
+<p xml:id="pisaurus">Pisaurus, a quo civitas Pisauria.
+  <lb/>decurrit in Adriaticum mare.<!-- add marginalia --></p>
+<p xml:id="phocias">Phocias,Thessaliae;in epidamnum
+  <lb/>fluit.</p>
+<p xml:id="pachysos">Pachysos,Siciliae;ubi Sextus Pom
+  <lb/>peius iuvenis interfectus est.<!-- add marginalia --></p>
+<!-- Q' no entry -->
+<p xml:id="rhenus">Rhenus,germaniae,belgas.a ger
+  <lb/>manis segregans.</p>
+<p  xml:id="rubicon">Rubicon Galliae,iuxta arimi
+  <lb/>num;olim dividens galliam ab italia</p>
+<p xml:id="rutaba">Rutaba.ex Appennino in Thy
+  <lb/>brin fluit.</p>
+<p xml:id="strymon">Strymon,Thraciae;plurimo
+  <lb/>gelu strictus Sequana gallie.</p>
+
+
+
+
+
+
+
+
+          <!--Text goes here, according to the conventions laid out elsewhere in these guidelines.-->
+        </div>
+        <div type="textpart" n="2" xml:id="part2">
+          <head>Title of Second Part</head>
+          <!--Each new major section (e.g., book, volume) has a new <div>.-->
+        </div>
+        <div type="bibliography"/>
+      </div>
+    </body>
+    <back>
+      <!--The content of the back matter will be determined in consultation between
+      the editor and the staff of the DLL. Because LDLT editions are encoded, the
+      matter traditionally found in the back of a printed critical edition may be
+      generated by applications instead of having to be entered manually.
+      Nevertheless, there is space here for notes, indices, and other kinds of
+      information.-->
+    </back>
+  </text>
+</TEI>
